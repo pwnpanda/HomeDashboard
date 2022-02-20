@@ -5,9 +5,81 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: gray;
+  color: wheat;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.allContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.allApps {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 0.1em;
+  border-color: white;
+  border-style: dashed;
+  border-radius: 0.3em;
+  padding: 0.3em;
+}
+
+.singleApp {
+  display: flex;
+  border: 0.12em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-color: white;
+  border-style: dotted;
+  border-radius: 0.3em;
+  margin: 0.5em;
+  flex: 1 0 45%;
+}
+
+.appName {
+  display: flex;
+  justify-self: center baseline;
+  align-items: center baseline;
+  align-self: center baseline;
+  margin-left: auto;
+}
+
+.singleApp hr {
+  width: 100%;
+  color: orange;
+}
+
+.invisible {
+  visibility: hidden;
+  width: 100%;
+  color: gray;
+  margin: 0%;
+}
+
+.singleApp button {
+  display: flex;
+  flex-direction: column;
+  padding: 0.1em;
+  margin: 0.1em;
+}
+
+.singleAppIcon {
+  margin-left: auto;
+}
+
+.singleAppIconGreen path {
+  color: lime;
+  fill: lime;
+}
+
+.singleAppIconGreen g {
+  color: lime;
+  fill: lime;
 }
